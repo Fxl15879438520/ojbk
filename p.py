@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 
 goods = input("请输入商品名: ")  # 搜索关键字
 depth = 1  # 搜索深度为2，即爬取第1页，第2页
-start_url = 'https://search.suning.com/' + goods +'/'
+start_url = 'https://youhui.pinduoduo.com/search/landing?keyword=' + goods
 infoList = []
 hd = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.90 Safari/537.36'}
 for j in range(depth):  # 对每一个页面进行处理，使用for循环

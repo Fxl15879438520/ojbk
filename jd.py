@@ -3,7 +3,7 @@ import requests
 import re
 import time
 
-goods = '小米9'  # 搜索关键字
+goods = '华为p30'  # 搜索关键字
 depth = 1  # 搜索深度为2，即爬取第1页，第2页
 start_url = 'https://search.jd.com/Search?keyword=' + goods + '&enc=utf-8&wq=' + goods
 infoList = []
@@ -41,4 +41,4 @@ print(tplt.format("序号", "价格",
 count = 0
 for g in infoList:
     count = count + 1
-    print(tplt.format(count, g[0], g[1]))  # 打印商品价格、名称，字符串没做处理
+    print(tplt.format(count, g[0], g[1]))  # 打印商品价格、名称，字符串没做处
